@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [ develop ]
+
+jobs:
+  compile_code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Compile reactJS code
+        run: |
+          bash ./deploy/compile_code.sh
+      - name: Upload build files for job push_template
+        uses: actions/upload-artifact@v2
+        with:
+          name: build_ui
+          path: build/
+
+  # push_template:
+  #   runs-on: ubuntu-latest
+
+  #   needs: build_image
+
+  #   steps:
+  #     - uses: actions/checkout@v2
+
+  #     - name: Push Docker image to registry
+  #       run: |
+  #         bash ./deploy/push_template.sh
+
+
+  # deploy_service:
+  #   runs-on: ubuntu-latest
+
+  #   needs: ["compile_code","push_template"]
+
+  #   steps:
+  #     - uses: actions/checkout@v2
+
+  #     - name: Deploy service in GCP
+  #       run: |
+  #         bash ./deploy/deploy_service.sh
