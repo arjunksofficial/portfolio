@@ -3,6 +3,8 @@
 }
 
 .App-header {
+  background-image: url(./assets/images/nandhi_hills.JPG);
+  background-size: cover;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
