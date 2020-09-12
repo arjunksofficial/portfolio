@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import bgimage from './assets/images/nandhi_hills.JPG';
 
 function App() {
   return (
