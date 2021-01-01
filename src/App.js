@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
+import Cover from './components/Cover';
+import Navbar from './components/Navbar';
+import Main from './components/Main'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Arjun K S</h1>
-        <h3>Golang Backend Developer</h3>
-      </header>
+      <Cover/>
+      {/* <Navbar/> */}
+      {/* <Main/> */}
     </div>
   );
 }

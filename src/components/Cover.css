@@ -1,0 +1,30 @@
+.Cover {
+  background-color: grey;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.CoverInfo {
+  width:70%;
+  float: left;
+  height: 220px;
+}
+ 
+.CoverProfilePictureContainer {
+  width: 30%;
+  float: left;
+  height: 220px;
+}
+
+.CoverProfilePicture {
+  padding: 10px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width:800px) {
+  .CoverInfo, .CoverProfilePictureContainer {
+    width:100%;
+  }
+}
