@@ -2,11 +2,12 @@ import React from 'react'
 import Content from './common/Content';
 import './Main.css';
 
-function Main(){
+function Main() {
     return (
         <div className={`Main`}>
-            <Content/>
+            <Content />
         </div>
     )
 }
+
 export default Main

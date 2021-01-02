@@ -1,0 +1,10 @@
+.Skilltype {
+    width: 25%;
+    float: left;
+    height: 160px;
+}
+@media screen and (max-width: 800px) {
+    .Skilltype {
+      width: 50%;
+    }
+  }

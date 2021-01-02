@@ -1,0 +1,33 @@
+.Experience {
+  background-color: black;
+  /* border: 10px solid black; */
+}
+
+.ExperienceCompanyLogoContainer {
+  width: 30%;
+  float: left;
+  height: 220px;
+  /* background-color: lightcoral; */
+}
+
+.CompanyDescription {
+  width: 70%;
+  float: left;
+  height: 220px;
+  /* background-color:lightsalmon; */
+  overflow: auto;
+}
+
+.CompanyLogo {
+  padding: 10px;
+  margin: auto;
+  width: 200px;
+  overflow: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .CompanyDescription,
+  .ExperienceCompanyLogoContainer {
+    width: 100%;
+  }
+}

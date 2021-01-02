@@ -1,6 +1,10 @@
 .Navbar {
-    position: relative;
-    /* padding: 20px; */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: rgb(0, 0, 255);
+    margin-bottom: 10px;
+    color: black;
 }
 
 .Sections {
@@ -10,12 +14,13 @@
 
 .Section {
     padding: 20px;
+    color: black;
 }
 
 .active {
     padding: 20px;
-    color: blue;
+    color: rgb(255, 255, 255);
 }
 .Section:hover {
-    color:green;
+    color: rgb(255, 255, 255);
 }

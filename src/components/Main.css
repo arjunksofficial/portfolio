@@ -1,7 +1,7 @@
 .Main {
-    text-align: center;
-}
-
-.Content {
-    width: 80%;
+  position: initial;
+  align-items: center;
+  text-align: center;
+  /* margin: auto; */
+  overflow: auto;
 }

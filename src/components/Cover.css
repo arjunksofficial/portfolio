@@ -1,16 +1,17 @@
 .Cover {
-  background-color: grey;
+  /* background-color: grey; */
   text-align: center;
   padding-left: 10%;
   padding-right: 10%;
+  height: 250px;
+  /* overflow: auto; */
 }
 
 .CoverInfo {
-  width:70%;
+  width: 70%;
   float: left;
-  height: 220px;
 }
- 
+
 .CoverProfilePictureContainer {
   width: 30%;
   float: left;
@@ -21,10 +22,22 @@
   padding: 10px;
   height: 200px;
   border-radius: 50%;
+  overflow: auto;
 }
 
-@media screen and (max-width:800px) {
-  .CoverInfo, .CoverProfilePictureContainer {
-    width:100%;
+.LinkIcon {
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s; /* Animation */
+}
+
+.LinkIcon:hover {
+  transform: scale(1.5);
+}
+@media screen and (max-width: 800px) {
+  .CoverInfo,
+  .CoverProfilePictureContainer {
+    width: 100%;
   }
 }
