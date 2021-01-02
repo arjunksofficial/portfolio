@@ -7,14 +7,12 @@
   width: 30%;
   float: left;
   height: 220px;
-  /* background-color: lightcoral; */
 }
 
 .CompanyDescription {
   width: 70%;
   float: left;
-  height: 220px;
-  /* background-color:lightsalmon; */
+  min-height: 220px;
   overflow: auto;
 }
 
