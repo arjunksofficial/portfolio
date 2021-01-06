@@ -1,0 +1,9 @@
+.Content {
+  width: 80%;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  background-color: rgba(0, 0, 255, 0.281);
+  overflow: auto;
+  margin-bottom: 20px;
+}
